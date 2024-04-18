@@ -1,0 +1,165 @@
+/* Algemene opmaak */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5ce5b4;
+    color: white;
+    font-size: 18px;
+}
+
+h1, h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #5ce5b4;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+/* Header */
+.header {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Main Sections */
+.main-section {
+    padding: 80px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #5ce5b4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+#front-end{
+    background-color: #5ce5b4;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin-left: 5%;
+}
+
+#back-end{
+    background-color: #5ce5b4;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+
+/* Block Div */
+/* Block Div */
+/* Block Div */
+.block {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px; /* Aangepaste breedte */
+}
+
+/* Header Animation */
+.header {
+    animation: slideInDown 1s ease-out;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Text Animation */
+.main-section .container {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delay the animation until the section is in view */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Button Hover Animation */
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f00; /* Change to your desired hover color */
+}
+
+/* Parallax Scrolling */
+.main-section {
+    background-attachment: fixed;
+}
+
+/* Image Animation */
+.image {
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1); /* Zoom in */
+}
+
